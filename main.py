@@ -1,0 +1,11 @@
+print('Hello')
+print('I like footbal')
+print(10+20)
+print('I go to school')
+print('I am cooooooool!')
+print('we use the word Print in the python language to program some datas in a Website or a Screen' )
+print('Print mean literally to producing text on paper ')
+print('But in programming language it almost always means showing text,numbers, or results in the console.')
+
+print("i love basketball and squash")
+print("i am 8 years old")
