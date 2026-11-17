@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 30px;
+        }
+
+        h1 {
+            color: #2563a6;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+        }
+
+        form {
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Doctor's Appointment</h1>
+    <p>Fill in the form below to book your appointment</p>
+    <hr>
+
+    <form>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label>Your Name</label><br>
+            <input type="text" id="name" placeholder="Enter your full name"><br><br>
+
+            <label>Patient ID</label><br>
+            <input type="password" id="pid" placeholder="You secret ID"><br><br>
+
+            <label>Date of Birthday</label><br>
+            <input type="date" id="dob"><br>
+
+        </fieldset>
+        <fieldset></fieldset>
+        <legend>Your Visit</legend>
+        <select id="Doctor">
+            <option value="">--Select a Doctor--</option>
+            <option value="dr-ray">Dr. Ray - General</option>
+            <option value="dr-yusuf">Dr. Yusuf -Hearth</option>
+            <option value="dr-sam">Dr. Sam -Eyess</option>
+        </select><br><br>
+        <label>why are you visiting?</label><br>
+        <input type="radio" name="reason" value="fever"> fever<br>
+         <input type="radio" name="reason" value="cold"> Cold<br>
+          <input type="radio" name="reason" value="checkup"> Checkup<br>
+         <input type="radio" name="reason" value="footh"> Tooth Pain<br>
+        
+         <lable>Any notes for the Doctor?</lable><br>
+         <textarea id="notes" rows="3" cals="35" placeholder="e.g I have had a sore throat for 
+         2 days."></textarea><br>
+    </fieldset>
+         
+
+            <br>
+
+        <fieldset>
+         <legend>Preferrend Visit day.</legend>
+
+        <input type="checkbox" value="mon">Monday<br>
+        <input type="checkbox" value="wed">Wednesday<br>
+        <input type="checkbox" value="fri">Friday<br>
+         </fieldset>
+
+         <br>
+         <input type="submit" value="Book my Appointment">
+
+
+    </form>
+</body>
+</html>
