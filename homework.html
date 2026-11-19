@@ -169,8 +169,121 @@
       <a href="https://www.nutrition.gov/" target="_blank">
         Nutrition.gov
       </a>
+   
     </p>
+    <style>
+    body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 30px;
+        }
+
+        h1 {
+            color: #2563a6;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+        }
+
+        form {
+            background-color: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        fieldset {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        legend {
+            color: #2563a6;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 95%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #2563a6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #174675;
+        }
+    </style>
+</head>
+
   </footer>
+  <h1>Book Donation Form</h1>
+
+<form>
+
+  <!-- PART 1: Donor Details -->
+  <fieldset>
+    <legend>Donor Details</legend>
+    <label>Your Name</label><br>
+    <input type="text"><br>
+    <label>Donor ID</label><br>
+    <input type="password"><br>
+    <label>Donation Date</label><br>
+    <input type="date"><br>
+  </fieldset>
+
+  <!-- PART 2: Book Details -->
+  <fieldset>
+    <legend>Book Details</legend>
+    <label>Book Category</label><br>
+    <select>
+      <option>Fiction</option>
+      <option>Science</option>
+      <option>History</option>
+      <option>Education</option>
+    </select><br>
+
+    <label>Book Condition</label><br>
+    <input type="radio" name="condition"> Like New<br>
+    <input type="radio" name="condition"> Good<br>
+    <input type="radio" name="condition"> Used<br>
+
+    <!-- PART 3: Title or notes -->
+    <label>Book Title or Notes</label><br>
+    <textarea rows="3" cols="35"></textarea><br>
+  </fieldset>
+
+  <!-- PART 4: Drop-off days and button -->
+  <fieldset>
+    <legend>Drop-Off Day</legend>
+    <input type="checkbox"> Monday<br>
+    <input type="checkbox"> Wednesday<br>
+    <input type="checkbox"> Friday<br>
+  </fieldset>
+
+  <input type="submit" value="Donate My Book">
+
+</form>
+
 
 </body>
 </html>
